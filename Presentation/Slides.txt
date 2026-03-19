@@ -1,0 +1,77 @@
+First page:
+A
+Presentation
+On
+SOUND FOR SILENCE
+Submitted to partial fullfillment of requirement for the award for the award of degree of
+BACHELOR OF TECHNOLOGY
+IN
+COMPUTER SCIENCE & ENGINEERING
+COllege logo (logo.png)
+Presented By :
+3 team members names and roll numbers.
+Presented to :
+Narendra Narwal
+ARYA INSTITUTE OF ENGINEERING TECHNOLOGY & MANAGEMENT, JAIPUR
+
+2nd page:
+Intro
+--
+This project is about web and mobile app solution that connect therapsits, parents and kids (the paitent).
+
+This project is used by therapsists to judge auditory listening capacbilites and congitnite ability of kids.
+This provides beneftis to all there clients, by mkaing the process of tehrarpy easy, making the prcoess paper less digital.
+
+3rd section
+Archtiure and interface:
+first page: ARCHTIEUTER DIAGRAM. Detailing overall how things are connected.
+
+Interfaces:
+three interfaces:
+APP->accessed by kids and parents. They watch videos and give quiz and can view scores and contantct therapsit, whatsapp.
+
+
+Web interface:
+theraspists: (https://therapist-sigma.vercel.app/#patients)
+they can see theire clients (paintes), and see their quiz scores histroy and also update/or give it and depending on that give CAP scores, and Conginite scroes (I call it SIR, create an simple acroyn form it relating to cognitive capabilities).
+
+Admin:https://adminpanel-nine-theta.vercel.app/login.html
+this is used by the institutes connect parents and therapsits togehter to manage who has acces to what like: what therpasit serves which kids, who has ability to edit quizes, videos etc.
+it is used to manage quizes, vidZZeos, therapsits, parents.
+It consists of a permission matrix used to edit permissions.
+
+4rth section
+Thank you.
+------
+
+Style:
+3rd section:
+top: interface name eg app, therapsit protal, admin portal
+on left side: 
+list all interface section names for a partiaul app or portal.
+then on right show image
+and at bottom some short description.
+
+the right shight greys out/fades away the interface not being discusedd and focuses the section being discuesed.
+
+Eg:
+top: ADMIN
+left:
+Home: image
+Permissions.
+
+Therapsit:
+left:
+Home/patients
+assement
+
+app:
+home/videos
+quiz
+performance
+---
+overall style.
+Simple, clean, short. Colorfull. Playfull/
+
+--- 
+Use placholders for images.
