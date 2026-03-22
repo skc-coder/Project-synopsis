@@ -81,15 +81,29 @@
 
   #v(0.4in)
 
+#columns(2, gutter: 8pt)[
+    #align(left)[
+    #text(size: 12pt)[
+      *SUBMITTED TO*\
+
+    ]
+  ]
+
+    #colbreak();
+
+
   #align(right)[
     #text(size: 12pt)[
       *SUBMITTED BY*\
-      \
-      Abhishek Verma #h(1em) Roll No. 22EAOCS005\
-      Shekhar Chaurasiya #h(1em) Roll No. 22EAOCS047\
-      Sakshi Puria #h(1em) Roll No. 22EAOCS042\
+
+      Abhishek Verma (22EAOCS005)\
+      Shekhar Chaurasiya (22EAOCS047)\
+      Sakshi Puria (22EAOCS042)\
     ]
   ]
+]
+
+
 
   #v(0.5in)
 
@@ -127,7 +141,9 @@ The *Web Dashboard*, developed using HTML, CSS, and JavaScript, serves as a Ther
 
 The entire backend is powered by Firebase. Firebase Authentication handles secure login for both parents and therapists using email and password, with role-based access control. Firebase Firestore stores all application data including user profiles, patient records, stage content, video metadata, quiz results, and clinical assessments. Firebase Hosting serves the web dashboard. No separate server or Node.js backend is required.
 
-*Rationale:* Children with cochlear implants require consistent, guided practice over months and years. Currently, therapy progress is often tracked manually using paper records, which makes longitudinal monitoring difficult and error-prone. Sound for Silence addresses this gap by providing a structured learning environment for the child, transparent progress visibility for the parent, and data-driven clinical tools for the therapist.
+*Rationale:* 
+
+Children with cochlear implants require consistent, guided practice over months and years. Currently, therapy progress is often tracked manually using paper records, which makes longitudinal monitoring difficult and error-prone. Sound for Silence addresses this gap by providing a structured learning environment for the child, transparent progress visibility for the parent, and data-driven clinical tools for the therapist.
 
 // ════════════════════════════════════════════
 //  2. OBJECTIVES
