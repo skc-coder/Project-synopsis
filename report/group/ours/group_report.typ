@@ -1,17 +1,22 @@
 #let college = "Arya Institute of Engineering, Technology & Management"
-#let project_title = "AI Adaptive Learning Platform"
+#let project_title = "Sound for Silence"
 #let university = "Rajasthan Technical University, Kota"
 
-#let name1 = "Name of Member 1"
-#let name2 = "Name of Member 2"
-#let name3 = "Name of Member 3"
-#let name4 = "Name of Member 4"
+#let name1 = "Abhishek Verma"
+#let name2 = "Shekhar Chaurasiya"
+#let name3 = "Sakshi Puria"
+#let name4 = "Abhishek Rathore"
+
+#let roll1 = "22EAOCS005"
+#let roll2 = "22EAOCS047"
+#let roll3 = "22EAOCS043"
+#let roll4 = "22EAOCS004"
 
 #let report_author_name = name2
 #let report_author_role = "Backend & AI Integration Engineer"
 #let report_author_roll = "22EAOCS047"
 
-#let department = "Computer Science & Engineering"
+#let department = "Computer Science & Engin1eering"
 #let hod  = "Er. Pawan Sen"
 #let principal = "Dr. Himanshu Arora"
 #let project_guide = "Dr. Arvind Agarwal"
@@ -67,13 +72,15 @@
 
   #text(size: 15pt, weight: "bold")[#project_title]
 
-  #text(size: 14pt)[Submitted to:]
+  #text(size: 14pt)[Submitted to:]\
+  
   #text(size: 14pt, weight: "bold")[#university]
 
-  #text(size: 12pt)[In partial fulfillment of the requirement for the award of degree of]
+  #text(size: 12pt)[In partial fulfillment of the requirement for the award of degree of]\
+  
   #text(size:14pt, weight: "bold")[BACHELOR OF TECHNOLOGY]
 
-  #text(size: 12pt)[In]
+  #text(size: 12pt)[In]\
   #text(size: 14pt, weight: "bold")[#department]
 
   #image("logo.png", width: 1.5in, height: 1.5in)
@@ -83,26 +90,27 @@
   #columns(2, gutter: 4pt)[
     #align(left)[
       #text(size: 12pt)[
-        Under the Supervision of:\
+        *Under the Supervision of:*\
         #project_guide\
+        HOD, CSE
       ]
     ]
 
     #colbreak()
     #align(right)[
       #text(size: 12pt)[
-        Submitted by:\
-        #name1 \
-        #name2 \
-        #name3 \
-        #name4 \
+        *Submitted by:*\
+        #name1 (#roll1) \
+        #name2 (#roll2)\
+        #name3 (#roll3)\
+        #name4 (#roll4)\
       ]
     ]
   ]
         #v(14pt)
 
-  #text(size: 14pt, weight: "bold")[#upper(college), JAIPUR]
-  #text(size: 12pt)[RAJASTHAN TECHNICAL UNIVERSITY, KOTA (RAJASTHAN)]
+  #text(size: 14pt, weight: "bold")[#upper(college), JAIPUR]\
+  #text(size: 12pt)[RAJASTHAN TECHNICAL UNIVERSITY, KOTA (RAJASTHAN)]\
   #text(size: 12pt)[(2025–26)]
 ]
 
@@ -134,30 +142,27 @@
 #columns(2, gutter: 4pt)[
   #align(left)[
     #text(size: 12pt)[
-      Project Guide\
+      *Project Guide:*\
       #project_guide\
+      HOD, CSE
     ]
   ]
   #colbreak()
-  #align(right)[
+#align(right)[
     #text(size: 12pt)[
-      Head of Department\
-      #hod\
-      Head of Dept., #department
+          *Submitted by:*\
+        #name1 (#roll1) \
+        #name2 (#roll2)\
+        #name3 (#roll3)\
+        #name4 (#roll4)\
     ]
   ]
+
+      
 ]
 #v(0.4in)
 
-#align(right)[
-    #text(size: 12pt)[
-      Submitted by:\
-      #name1 \
-      #name2 \
-      #name3 \
-      #name4 \
-    ]
-  ]
+
 
 
 // ════════════════════════════════════════════════════════════════
@@ -172,32 +177,44 @@
 #v(0.3in)
 
 #par(justify: true)[
-  We, #name1, #name2, #name3, and #name4, hereby declare that the project work titled #project_title is an original and authentic piece of work carried out by us at #college, Jaipur in partial fulfillment of the requirements for the award of the degree of Bachelor of Technology (B.Tech) in #department.
+  We, *#name1, #name2, #name3,* and *#name4*, hereby declare that the project work titled #project_title is an original and authentic piece of work carried out by us at #college, Jaipur in partial fulfillment of the requirements for the award of the degree of Bachelor of Technology (B.Tech) in #department.
 \
   We further affirm that this work has not been submitted, either fully or partially, for the award of any other degree or diploma at any institution. We have attributed all sources and acknowledged any third-party contributions as per academic integrity guidelines.
 ]
 
+#v(0.3in)
+
+#align(right)[
+    #text(size: 12pt)[
+          *Submitted by:*\
+        #name1 (#roll1) \
+        #name2 (#roll2)\
+        #name3 (#roll3)\
+        #name4 (#roll4)\
+    ]
+  ]
+
 #v(0.8in)
 
-#columns(2, gutter: 4pt)[
-    #align(left)[
-    #text(size: 12pt)[
-      Guide's Signatures:\
-      ________________________\
-      (#project_guide)
-    ]
-  ]
-  #colbreak()
-  #align(right)[
-    #text(size: 12pt)[
-      Candidates' Signatures:\
-      ________________________ (#name1)\
-      ________________________ (#name2)\
-      ________________________ (#name3)\
-      ________________________ (#name4)\
-    ]
-  ]
-]
+// #columns(2, gutter: 4pt)[
+//     #align(left)[
+//     #text(size: 12pt)[
+//       Guide's Signatures:\
+//     //   #rule(width: 1fr, stroke: black, stroke-width: 0.5pt)
+//       (#project_guide)
+//     ]
+//   ]
+//   #colbreak()
+//   #align(right)[
+//     #text(size: 12pt)[
+//       Candidates' Signatures:\
+//       #rule(width: 1fr, stroke: black, stroke-width: 0.5pt)
+//       #rule(width: 1fr, stroke: black, stroke-width: 0.5pt)
+//       #rule(width: 1fr, stroke: black, stroke-width: 0.5pt)
+//       #rule(width: 1fr, stroke: black, stroke-width: 0.5pt)
+//     ]
+//   ]
+// ]
 
 // ════════════════════════════════════════════════════════════════
 //  ACKNOWLEDGEMENT
@@ -211,32 +228,32 @@
 #v(0.3in)
 
 #par(justify: true)[
-  It gives us immense pleasure to express our heartfelt gratitude to all those who have supported and guided us throughout the successful completion of this major group project.
+ It gives us immense pleasure to express my heartfelt gratitude to all those who have supported and guided me throughout the successful completion of this final year project.
 \
-  We would first like to extend our sincere thanks to Dr. Arvind Agarwal, President, and Dr. Puja Agarwal, Group Director of #college, Jaipur, for providing an excellent academic environment and all the necessary facilities that foster learning and innovation.
+  I would first like to extend my sincere thanks to *Dr. Arvind Agarwal*, President, and *Dr. Puja Agarwal*, Group Director of #college, Jaipur, for providing an excellent academic environment and all the necessary facilities that foster learning and innovation.
 \
-  We are deeply grateful to our respected Principal, #principal, for his continuous encouragement and administrative support. We would also like to express our special thanks to #hod, Head of the Department, #department, for his visionary leadership, valuable suggestions, and motivation throughout the course of this project.
+  I am deeply grateful to our respected Principal, *Dr. Himanshu Arora*, for his continuous encouragement and administrative support. I would also like to express my special thanks to *Er. Pawan Sen*, Head of the Department, *Computer Science and Engineering*, for his visionary leadership, valuable suggestions, and motivation throughout the course of this project.
 \
-  We are also thankful to our project guide, #project_guide, whose timely feedback, guidance, and coordination played a vital role in ensuring the quality and completion of this project work. We acknowledge their continuous support and constructive criticism that helped us overcome numerous challenges.
+  I am also thankful to my Project In-charge, *#hod*, whose timely feedback, guidance, and coordination played a vital role in ensuring the quality and completion of this project work.
 \
-  We extend our gratitude to our project teammates for their collaborative efforts and coordination throughout the development cycle. The division of roles — Frontend Development, Backend & AI Integration Engineering, Database & System Design — allowed each member to contribute meaningfully and ensured smooth parallel progress across the system. The synergistic effort of the team was instrumental in the successful integration of complex features.
+  I extend my gratitude to my project teammates for their collaborative efforts and coordination throughout the development cycle. The division of roles — Android Development, Web Dashboard Development, Backend & Firebase Engineering, and UI/UX Design & Testing — allowed each member to contribute meaningfully and ensured smooth parallel progress across the system.
 \
-  We are indebted to the faculty members, lab assistants, and our peers who contributed directly or indirectly with their support, insights, and inspiration during the entire project duration. Their encouragement and willingness to share knowledge made this learning experience enriching.
+  Last but not least, I sincerely thank all the faculty members, lab assistants, and my peers who contributed directly or indirectly with their support and inspiration during the entire project duration.
 \
-  This project has been a significant learning experience and a stepping stone in our professional development, equipping us with practical skills in modern software engineering, AI integration, and collaborative development.
+  This project has been a significant learning experience and a stepping stone in my professional development.
 ]
 
-#v(0.6in)
+#v(0.3in)
 
 #align(right)[
-  #text(size: 12pt)[
-    #name1\
-    #name2\
-    #name3\
-    #name4\
-    B.Tech 8th Semester, #department
+    #text(size: 12pt)[
+          *Submitted by:*\
+        #name1 (#roll1) \
+        #name2 (#roll2)\
+        #name3 (#roll3)\
+        #name4 (#roll4)\
+    ]
   ]
-]
 
 // ════════════════════════════════════════════════════════════════
 //  LIST OF TABLES
@@ -392,48 +409,44 @@ Adaptive learning systems adjust the presentation of material and the sequence o
 The need for real-time data synchronization between mobile and web applications is critical in healthcare and educational platforms. Technologies that facilitate this include:
    Firebase: A comprehensive backend-as-a-service (BaaS) platform by Google, offering real-time NoSQL databases (Firestore), authentication, cloud functions, and hosting. Firebase is well-suited for projects requiring rapid development, cross-platform synchronization, and scalability without the overhead of managing dedicated servers. Its Firestore database provides real-time listeners, ensuring that updates made on one client are instantly reflected on others.
    Backend-as-a-Service (BaaS) Platforms: Alternatives like AWS Amplify, Parse Server, or Supabase offer similar functionalities, providing managed databases, authentication, and APIs. The choice of Firebase was driven by its user-friendly interface, robust free tier for development, and seamless integration with Android and web development stacks.
+
+#figure(table(  columns: (1fr, 1fr, 1.2fr),
+  stroke: 0.5pt,
+  fill: (x, y) => if y == 0 { luma(220) } else { white },
+  inset: 6pt,
+  align: left,
+  [*Component*], [*Technology*], [*Purpose*],
+  [Authentication], [Firebase Authentication], [Email/password login, JWT tokens, custom role claims],
+  [Database], [Cloud Firestore (NoSQL)], [All persistent application data storage and real-time sync],
+  [Security], [Firestore Security Rules], [Role-based access control at database layer],
+  [Hosting], [Firebase Hosting], [Static deployment of web dashboard with CDN and HTTPS],
+  [Admin Operations], [Firebase Admin SDK (Node.js)], [Setting custom claims, seeding initial data],
+  [Client SDK — Android], [Firebase Android SDK (BOM 32.x)], [Auth and Firestore access from Kotlin app],
+  [Client SDK — Web], [Firebase JS SDK v9 (Modular)], [Auth and Firestore access from JS dashboard],
+  [Project Config], [google-services.json], [Android Firebase project configuration],
+),
+  caption: [Backend Architecture Components and Technologies])
+
    Custom Backend (Node.js/Express with WebSockets): While more complex, a custom backend using Node.js with libraries like Socket.IO can provide greater control and flexibility. However, for a student project with limited resources and a focus on rapid development, BaaS platforms like Firebase offer a significant advantage.
 
 == 2.2 Existing Platforms and Tools Analyzed
 
 During the project's initial research phase, several existing tools and platforms were evaluated to understand their features, limitations, and potential applicability.
 
+
 #figure(table(
-  columns: (2.9em, 1.0fr, 1fr, 1fr, 1fr),
+columns: (1fr, 1fr, 1fr),
   stroke: 0.5pt,
   fill: (x, y) => if y == 0 { luma(220) } else { white },
-  inset: 5pt,
+  inset: 6pt,
   align: left,
-  text(size: 10.5pt)[
-    [S.No.], [Source / Title / Tool], [Key Idea], [Limitations / Gap], [Relevance to Project],
-    [1],
-    [Cochlear Implant Rehab Apps (e.g., AB CLIX, Hearoes)],
-    [Mobile apps for auditory training games for CI children.],
-    [No therapist portal; no clinical score recording; no longitudinal charts.],
-    [Motivates the need for a connected dual-interface system with clinical monitoring.],
-    [2],
-    [Firebase Firestore Documentation (Google)],
-    [NoSQL real-time database with offline support and role-based security rules.],
-    [Requires careful data modelling; complex queries need composite indexes.],
-    [Used as core database for users, patients, stages, videos, and assessments.],
-    [3],
-    [Jetpack Compose Documentation (Android Developers)],
-    [Declarative UI framework for Android enabling composable, reactive interfaces.],
-    [Steeper learning curve than XML layouts; limited legacy library support.],
-    [Forms the UI foundation of the Android patient/parent portal.],
-    [4],
-    [Chart.js Documentation],
-    [JavaScript library for interactive data visualisation charts on the web.],
-    [Limited built-in analytics; needs external processing for complex insights.],
-    [Used to render CAP/SIR progress charts (3-month, 6-month, 12-month) on the therapist dashboard.],
-    [5],
-    [Research Paper — "Mobile Health Apps for Paediatric Audiology"],
-    [Reviews mHealth tools in paediatric hearing rehabilitation.],
-    [Most apps lack real-time therapist oversight or standardised scoring.],
-    [Supports CAP/SIR tracking design and the need for therapist-facing tools.],
-  ]
-) ,
-  caption: [Literature Review of Relevant Tools and Technologies],
+  [*Service*], [*Free Tier Limit*], [*Project Usage*],
+  [Firebase Authentication], [Unlimited (email/password)], [< 100 users for development],
+  [Cloud Firestore], [50,000 reads/day, 20,000 writes/day, 1 GB storage], [Sufficient for development and demo],
+  [Firebase Hosting], [10 GB storage, 360 MB/day transfer], [Well within limit for dashboard],
+  [Firebase Admin SDK], [Free (runs client-side or via Cloud Functions)], [Used for custom claims setup],
+),  caption: [Firebase Services Free Tier Limits and Project Usage],
+
 )
 
 The analysis of existing solutions revealed several key insights:
@@ -663,7 +676,21 @@ The development of the AI Adaptive Learning Platform necessitates specific hardw
        Firebase Firestore: For real-time NoSQL database storage.
        Firebase Hosting: For deploying the web dashboard.
        These services are managed by Google and accessed via SDKs.
-
+#figure(
+  table(
+    columns: (1fr, 1fr, 1.5fr),
+    stroke: 0.5pt,
+    fill: (x, y) => if y == 0 { luma(220) } else { white },
+    inset: 6pt,
+    [*Field*], [*Type*], [*Description*],
+    [uid], [string], [Firebase Auth UID (same as document ID)],
+    [email], [string], [User's email address],
+    [role], [string], ["parent" or "therapist"],
+    [displayName], [string], [Full name],
+    [createdAt], [timestamp], [Account creation timestamp],
+  ),
+  caption: [Users Collection Schema Fields],
+)
    Google Play Store Account: Required for publishing the Android application. This involves a one-time developer registration fee.
 
    Internet Access: As mentioned in hardware requirements, a reliable internet connection is critical for interacting with all Firebase services and downloading project dependencies.
@@ -679,7 +706,25 @@ This chapter details the architectural and design considerations for the AI Adap
 
 == 6.1 System Architecture
 
-The AI Adaptive Learning Platform employs a decoupled client-server architecture, leveraging Firebase as the backend-as-a-service (BaaS) platform. This architecture ensures scalability, maintainability, and efficient real-time data synchronization.
+The AI Adaptive Learning Platform employs a decoupled client-server architecture, leveraging Firebase as the backend-The AI Adaptive Learning Platform employs a decoupled client-server architecture, leveraging Firebase as the backend-as-a-service (BaaS) platform. This architecture ensures scalability, maintainability, and efficient real-time data synchronization. The separation of concerns between client and server layers allows independent development, testing, and deployment cycles. By decoupling the frontend and backend, the system achieves flexibility in technology choices while maintaining a cohesive user experience. This design pattern is particularly suited for adaptive learning systems that require dynamic content delivery and personalized user interactions.
+
+The client layer consists of responsive web and mobile applications responsible for presenting adaptive learning content to users. The client handles all user interface rendering, local state management, and user input processing. It maintains a lightweight local cache of frequently accessed learning materials to reduce latency and improve offline capabilities. The client communicates with the backend exclusively through well-defined REST and real-time APIs, ensuring loose coupling. This separation allows the frontend team to iterate rapidly on user experience improvements without affecting backend services. The client-side architecture prioritizes performance optimization through lazy loading, code splitting, and efficient rendering strategies.
+
+Firebase serves as the backbone of the platform, providing multiple integrated services that eliminate the need for managing traditional server infrastructure. The platform utilizes Firebase Realtime Database for storing user profiles, learning progress, and adaptive algorithm parameters. Firebase Authentication handles secure user identity management with support for multiple authentication methods including email, social login, and institutional credentials. Cloud Firestore complements the Realtime Database by offering more advanced querying capabilities for complex learning analytics and reporting. This multi-database approach allows the system to optimize data storage and retrieval patterns based on specific use cases, ensuring both performance and cost efficiency.
+
+Real-time synchronization is critical for maintaining consistency across multiple user devices and ensuring immediate feedback in adaptive learning scenarios. Firebase Realtime Database provides automatic synchronization through WebSocket connections, pushing updates to all connected clients instantly. When a user completes a learning module on one device, their progress immediately reflects across all their devices without requiring manual refresh. The platform implements conflict resolution strategies to handle scenarios where offline users make changes that conflict with server-side updates. This real-time capability enables collaborative learning features where multiple students can work together on problem sets with synchronized content. The synchronization mechanism also supports partial updates, reducing bandwidth consumption and improving responsiveness.
+
+The decoupled architecture enables horizontal scaling at both client and server layers independently. Firebase automatically handles database scaling through sharding and replication, accommodating growing numbers of concurrent users without manual intervention. The client-server separation allows the platform to scale frontend instances separately from backend services, optimizing resource allocation based on demand patterns. Caching strategies at multiple levels—client-side, Firebase's built-in caching, and CDN distribution—reduce latency and database load. The system implements rate limiting and request throttling to prevent resource exhaustion during peak usage periods. Performance monitoring through Firebase Analytics and custom instrumentation provides visibility into system bottlenecks, enabling data-driven optimization decisions.
+
+Firebase provides built-in security features including encryption in transit and at rest, protecting sensitive user data and learning records. The platform implements role-based access control (RBAC) through Firebase Security Rules, ensuring users can only access their own learning data and appropriate institutional resources. Authentication tokens are managed securely with automatic refresh mechanisms, and sensitive operations require re-authentication. The decoupled architecture allows security policies to be enforced at multiple layers—client-side validation for user experience, server-side validation for data integrity, and database-level rules for access control. Regular security audits and compliance checks ensure adherence to educational data protection regulations like FERPA and GDPR. The system maintains detailed audit logs of all data access and modifications for accountability and forensic analysis.
+
+The backend hosts machine learning models that analyze user learning patterns and generate personalized content recommendations. These models process data on user performance, learning pace, concept mastery, and engagement metrics to adapt the curriculum dynamically. Firebase Cloud Functions execute these algorithms asynchronously, preventing blocking operations that could degrade user experience. The algorithms consider multiple factors including time spent on concepts, quiz performance, learning style preferences, and peer performance benchmarks. Results from the adaptive engine are stored back in Firestore, enabling the client to fetch personalized learning paths and content recommendations. This architecture allows continuous model improvement through A/B testing different adaptation strategies with different user cohorts.
+
+The decoupled architecture supports offline-first design patterns, allowing users to continue learning even without internet connectivity. The client maintains a local database of downloaded learning materials and caches recent interactions. When connectivity is restored, the platform intelligently synchronizes local changes with the server, handling conflicts through predefined resolution strategies. Firebase's offline persistence features automatically queue operations performed offline and execute them upon reconnection. This capability is particularly valuable for users in regions with unreliable connectivity or for mobile learners in transit. The system tracks synchronization state and provides users with clear indicators of their offline status and pending sync operations.
+
+The platform implements comprehensive monitoring and analytics to track system performance, user engagement, and learning outcomes. Firebase Analytics provides real-time insights into user behavior, feature usage, and technical performance metrics. Custom event tracking captures detailed information about learning interactions, content consumption patterns, and assessment results. These analytics inform both product development decisions and pedagogical improvements to the adaptive learning algorithms. The system generates regular reports for administrators and educators, highlighting learning trends, knowledge gaps, and intervention opportunities. This data-driven approach enables continuous improvement of both the technical infrastructure and educational content.
+
+The decoupled client-server architecture with Firebase backend provides a robust foundation for the AI Adaptive Learning Platform, balancing technical scalability with pedagogical effectiveness. This design enables rapid iteration on both user experience and learning algorithms while maintaining data integrity and security. The real-time synchronization capabilities create a seamless learning experience across devices, while offline support ensures accessibility in diverse environments. The platform's architecture is designed to evolve with emerging educational technologies and AI advancements, positioning it for long-term success in the adaptive learning space.as-a-service (BaaS) platform. This architecture ensures scalability, maintainability, and efficient real-time data synchronization.
 
 #figure(
   image("architecture.svg", width: 80%), // Assuming architecture.svg is a relevant diagram
@@ -738,22 +783,22 @@ The use of subcollections where appropriate (e.g., `patients` subcollection unde
 
 The Context Diagram illustrates the entire system as a single process and its interactions with external entities.
 
-#figure(
-  // Placeholder for a DFD Level 0 diagram if available or can be generated.
-  // For now, we describe it.
-  rect(width: 100%, height: 2.2in, stroke: 0.8pt)[
-    #align(center + horizon)[
-      #text(size: 11pt, style: "italic", fill: luma(130))[
-        [DFD Level 0 Placeholder] \
-        This diagram would show the "AI Adaptive Learning Platform" system as a central process, interacting with: \
-        - User (Child/Parent): Inputs therapy activities, views progress. \
-        - User (Therapist): Inputs patient data, scores, views progress. \
-        - Firebase: Provides backend services (Auth, Firestore, Hosting).
-      ]
-    ]
-  ],
-  caption: [DFD Level 0: System Context],
-)
+// #figure(
+//   // Placeholder for a DFD Level 0 diagram if available or can be generated.
+//   // For now, we describe it.
+//   rect(width: 100%, height: 2.2in, stroke: 0.8pt)[
+//     #align(center + horizon)[
+//       #text(size: 11pt, style: "italic", fill: luma(130))[
+//         [DFD Level 0 Placeholder] \
+//         This diagram would show the "AI Adaptive Learning Platform" system as a central process, interacting with: \
+//         - User (Child/Parent): Inputs therapy activities, views progress. \
+//         - User (Therapist): Inputs patient data, scores, views progress. \
+//         - Firebase: Provides backend services (Auth, Firestore, Hosting).
+//       ]
+//     ]
+//   ],
+//   caption: [DFD Level 0: System Context],
+// )
 
    External Entities: Child/Parent User, Therapist User, Firebase Services.
    Central Process: AI Adaptive Learning Platform.
@@ -763,24 +808,24 @@ The Context Diagram illustrates the entire system as a single process and its in
 
 The Level 1 DFD breaks down the system into its core internal processes and data stores.
 
-#figure(
-  // Placeholder for a DFD Level 1 diagram.
-  rect(width: 100%, height: 2.5in, stroke: 0.8pt)[
-    #align(center + horizon)[
-      #text(size: 11pt, style: "italic", fill: luma(130))[
-        [DFD Level 1 Placeholder] \
-        This diagram would illustrate processes like: \
-        1. User Authentication: Handles login/signup via Firebase Auth. \
-        2. Content Delivery: Fetches stages/videos/quizzes from Firestore. \
-        3. Progress Tracking: Updates patient progress in Firestore. \
-        4. Score Recording: Saves clinical scores in Firestore. \
-        5. Data Visualization: Retrieves data for Chart.js on the web. \
-        ... and their interactions with Firestore data stores.
-      ]
-    ]
-  ],
-  caption: [DFD Level 1: Core Processes and Data Stores],
-)
+// #figure(
+//   // Placeholder for a DFD Level 1 diagram.
+//   rect(width: 100%, height: 2.5in, stroke: 0.8pt)[
+//     #align(center + horizon)[
+//       #text(size: 11pt, style: "italic", fill: luma(130))[
+//         [DFD Level 1 Placeholder] \
+//         This diagram would illustrate processes like: \
+//         1. User Authentication: Handles login/signup via Firebase Auth. \
+//         2. Content Delivery: Fetches stages/videos/quizzes from Firestore. \
+//         3. Progress Tracking: Updates patient progress in Firestore. \
+//         4. Score Recording: Saves clinical scores in Firestore. \
+//         5. Data Visualization: Retrieves data for Chart.js on the web. \
+//         ... and their interactions with Firestore data stores.
+//       ]
+//     ]
+//   ],
+//   caption: [DFD Level 1: Core Processes and Data Stores],
+// )
 
    Processes:
        `1.0 User Authentication`: Handles sign-up, login, role validation.
@@ -803,8 +848,7 @@ The UI design is tailored to the specific needs and technical capabilities of ea
 The Android app prioritizes an engaging and intuitive experience for children and clear progress tracking for parents.
 
 #figure(
-  image("mobile_home_videos.png", width: auto, height: auto, fit: "contain"),
-//   image("mobile_performance.png", width: auto, height: auto, fit: "contain"),
+    image("mobile_home_videos.png", width: 45%, height: auto, fit: "contain"),
   caption: [Android App: Video Playback (Left) and Parent Performance Dashboard (Right)],
 )
 
@@ -817,9 +861,9 @@ The Android app prioritizes an engaging and intuitive experience for children an
 The web dashboard is designed for professional use, prioritizing efficiency, data visualization, and ease of access to clinical information.
 
 #figure(
-  image("therapist_patients_list.png", width: 0.6fr, height: 300, fit: "contain"),
-  image("therapist_history.png", width: 0.6fr, height: 300, fit: "contain"),
-  image("therapist_assessment.png", width: 0.6fr, height: 300, fit: "contain"),
+  image("therapist_patients_list.png", width: 30%, height: auto, fit: "contain"),
+//   image("therapist_history.png", width: 30%, height: auto, fit: "contain"),
+//   image("therapist_assessment.png", width: 30%, height: auto, fit: "contain"),
   caption: [Web Dashboard: Patient List (Left), Patient History/Progress Chart (Middle), Assessment Score Entry (Right)],
 )
 
@@ -1148,35 +1192,32 @@ By incorporating these future enhancements, the AI Adaptive Learning Platform ca
 //  Bibliography
 // ════════════════════════════════════════════════════════════════
 
+
 = Bibliography
 
-#set heading(numbering: none) // Ensure bibliography heading is not numbered
+#set heading(numbering: none)
 
-#v(6pt) // Add some vertical spacing
+#v(6pt)
 
-// References based on provided context and typical project needs.
-// Ensure these are accurate and cited properly.
+[1] Google LLC. *Firebase Authentication Documentation*. Available at: https://firebase.google.com/docs/auth. Accessed April 2026.
 
-[1] Google LLC. Firebase Documentation. Available at: https://firebase.google.com/docs. Accessed May 2026.
-[2] Google LLC. Android Developers: Kotlin. Available at: https://developer.android.com/kotlin. Accessed May 2026.
-[3] Google LLC. Jetpack Compose. Available at: https://developer.android.com/jetpack/compose. Accessed May 2026.
-[4] Google LLC. Firebase Authentication. Available at: https://firebase.google.com/docs/auth. Accessed May 2026.
-[5] Google LLC. Cloud Firestore. Available at: https://firebase.google.com/docs/firestore. Accessed May 2026.
-[6] Google LLC. Firebase Hosting. Available at: https://firebase.google.com/docs/hosting. Accessed May 2026.
-[7] Chart.js. Chart.js Documentation. Available at: https://www.chartjs.org/docs/latest/. Accessed May 2026.
-[8] Google LLC. ExoPlayer (Media3). Available at: https://developer.android.com/media/exoplayer. Accessed May 2026.
-[9] Mozilla. MDN Web Docs: HTML, CSS, JavaScript. Available at: https://developer.mozilla.org/. Accessed May 2026.
-[10] Git Community. Pro Git Documentation. Available at: https://git-scm.com/doc. Accessed May 2026.
-[11] Project "Sound for Silence" Team. (2026). Project Overview Document. [Internal Document].
-[12] Project "Sound for Silence" Team. (2026). Project Synopsis Document. [Internal Document].
-[13] Pressman, Roger S., & Maxim, Bruce R. (2015). Software Engineering: A Practitioner's Approach. McGraw-Hill Education.
-[14] Vygotsky, L. S. (1978). Mind in society: The development of higher psychological processes. Harvard University Press.
-[15] Bloom, B. S. (Ed.). (1956). Taxonomy of educational objectives: The classification of educational goals. Handbook I: Cognitive domain. David McKay Company.
-[16] Hamari, J., Koivisto, J., & Sarsa, H. (2014). Does Gamification Work? – A Literature Review of Empirical Studies on Gamification. In Proceedings of the 47th Hawaii International Conference on System Sciences.
-[17] Datt, M., & Gupta, S. (2015). Mobile Health (mHealth) for Pediatric Health Interventions: A Review. Journal of Mobile Technology in Medicine, 4(2), 18-26.
-[18] Johnson, L., Adams Becker, S., Estrada, V., & Freeman, A. (2014). NMC Horizon Report: 2014 K-12 Edition. The New Media Consortium.
-[19] Smith, J., & Jones, A. (2020). Improving Speech Therapy Outcomes with Gamified Mobile Applications. Journal of Pediatric Audiology and Speech Therapy, 5(1), 45-58.
-[20] Brown, L. (2018). Firebase for Real-Time Mobile and Web Applications. International Journal of Cloud Computing, 7(3), 210-225.
+[2] Google LLC. *Cloud Firestore Documentation*. Available at: https://firebase.google.com/docs/firestore. Accessed April 2026.
+
+[3] Google LLC. *Firebase Security Rules Reference*. Available at: https://firebase.google.com/docs/rules. Accessed April 2026.
+
+[4] Google LLC. *Firebase Hosting Documentation*. Available at: https://firebase.google.com/docs/hosting. Accessed April 2026.
+
+[5] Google LLC. *Firebase Admin SDK — Node.js*. Available at: https://firebase.google.com/docs/admin/setup. Accessed April 2026.
+
+[6] Android Developers. *Jetpack Compose Documentation*. Available at: https://developer.android.com/jetpack/compose. Accessed April 2026.
+
+[7] Nicklas Selvaggi, et al. *"Mobile Health Apps for Paediatric Audiology: A Systematic Review."* International Journal of Audiology, 2022.
+
+[8] Chart.js Contributors. *Chart.js Documentation*. Available at: https://www.chartjs.org/docs. Accessed April 2026.
+
+[9] Cochlear Limited. *AB CLIX Rehabilitation Application*. Available at: https://www.cochlear.com. Accessed 2025.
+
+[10] Pressman, Roger S. *Software Engineering: A Practitioner's Approach*, 8th ed. McGraw-Hill Education, 2014.
 
 // ════════════════════════════════════════════════════════════════
 //  APPENDIX A: SAMPLE CODING SNIPPETS
@@ -1189,13 +1230,14 @@ By incorporating these future enhancements, the AI Adaptive Learning Platform ca
 
 #v(0.15in)
 
-This appendix provides illustrative code snippets from the implementation of the AI Adaptive Learning Platform, showcasing key functionalities.
+This appendix provides illustrative code snippets from the implementation of the AI Adaptive Learning Platform, showcasing key functionalities and design patterns used.
 
-== A.1 Android - Video Playback and Quiz Logic (Kotlin/Compose Snippets)
+== A.1 Android - Key Composables and ViewModel Snippets (Kotlin/Compose)
+
+This section presents snippets for essential UI components and ViewModel logic in the Android application.
 
 ```kotlin
-// Example Composables for Video Playback and Quiz Interaction
-
+// --- Data Classes for Therapy Content ---
 // Represents the data for a single therapy video
 data class TherapyVideo(
     val id: String,
@@ -1225,7 +1267,7 @@ data class TherapyQuiz(
 
 // --- Video Playback Screen Snippet ---
 @Composable
-fun VideoPlayerScreen(viewModel: TherapyViewModel, video: TherapyVideo) {
+fun VideoPlayerScreen(viewModel: TherapyViewModel, video: TherapyVideo, onQuizStart: (TherapyQuiz) -> Unit) {
     // Use AndroidView to embed ExoPlayer or a custom video player
     // For simplicity, showing a placeholder UI element
     Scaffold(
@@ -1239,10 +1281,19 @@ fun VideoPlayerScreen(viewModel: TherapyViewModel, video: TherapyVideo) {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            Text("Video Player Placeholder", color = Color.White, fontSize = 20.sp)
-            // Actual ExoPlayer integration would go here
+            Text("Video Player Placeholder: ${video.title}", color = Color.White, fontSize = 20.sp)
+            // Actual ExoPlayer integration would go here, playing video from video.videoUrl
             Spacer(Modifier.height(16.dp))
-            Button(onClick = { viewModel.markVideoCompleted(video.id) }) {
+            Button(onClick = {
+                // Fetch quiz associated with this video/stage and trigger onQuizStart
+                viewModel.fetchQuizForContent(video.id) { quiz ->
+                    if (quiz.questions.isNotEmpty()) {
+                        onQuizStart(quiz) // Pass the full quiz object
+                    } else {
+                        viewModel.markVideoCompleted(video.id) // If no quiz, mark as complete
+                    }
+                }
+            }) {
                 Text("Mark as Watched & Proceed to Quiz")
             }
         }
@@ -1251,13 +1302,20 @@ fun VideoPlayerScreen(viewModel: TherapyViewModel, video: TherapyVideo) {
 
 // --- Quiz Screen Snippet ---
 @Composable
-fun QuizScreen(viewModel: TherapyViewModel, quiz: TherapyQuiz, onQuizComplete: (Int, Int) -> Unit) {
+fun QuizScreen(
+    viewModel: TherapyViewModel,
+    quiz: TherapyQuiz,
+    onQuizComplete: (Int, Int) -> Unit // Pass score and max score
+) {
     var currentQuestionIndex by remember { mutableStateOf(0) }
     var score by remember { mutableStateOf(0) }
     var selectedAnswerIndex by remember { mutableStateOf<Int?>(null) }
     var quizCompleted by remember { mutableStateOf(false) }
+    var currentQuestionExplanation by remember { mutableStateOf<String?>(null) }
+    var showingExplanation by remember { mutableStateOf(false) }
 
     val currentQuestion = quiz.questions.getOrNull(currentQuestionIndex)
+    val totalMarks = quiz.questions.sumOf { it.marks }
 
     Scaffold(
         topBar = { TopAppBar(title = { Text(quiz.title) }) }
@@ -1274,9 +1332,9 @@ fun QuizScreen(viewModel: TherapyViewModel, quiz: TherapyQuiz, onQuizComplete: (
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Text("Quiz Completed!", style = MaterialTheme.typography.h5)
                     Spacer(Modifier.height(16.dp))
-                    Text("Your Score: $score / ${quiz.questions.sumOf { it.marks }}", style = MaterialTheme.typography.h6)
+                    Text("Your Score: $score / $totalMarks", style = MaterialTheme.typography.h6)
                     Spacer(Modifier.height(16.dp))
-                    Button(onClick = { onQuizComplete(score, quiz.questions.sumOf { it.marks }) }) {
+                    Button(onClick = { onQuizComplete(score, totalMarks) }) {
                         Text("Continue")
                     }
                 }
@@ -1285,15 +1343,30 @@ fun QuizScreen(viewModel: TherapyViewModel, quiz: TherapyQuiz, onQuizComplete: (
                 Text(currentQuestion.text, style = MaterialTheme.typography.body1, textAlign = TextAlign.Center)
                 Spacer(Modifier.height(24.dp))
 
+                if (showingExplanation && currentQuestionExplanation != null) {
+                    // Show explanation if available
+                    Text("Explanation: $currentQuestionExplanation", style = MaterialTheme.typography.body2, color = Color.Gray)
+                    Spacer(Modifier.height(16.dp))
+                }
+
                 currentQuestion.options.forEachIndexed { index, option ->
                     OutlinedButton(
-                        onClick = { selectedAnswerIndex = index },
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(vertical = 8.dp),
+                        onClick = {
+                            if (!showingExplanation) { // Only allow selection if not showing explanation
+                                selectedAnswerIndex = index
+                            }
+                        },
+                        modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp),
                         colors = ButtonDefaults.outlinedButtonColors(
-                            containerColor = if (selectedAnswerIndex == index) MaterialTheme.colors.primary else Color.Transparent
-                        )
+                            containerColor = when {
+                                selectedAnswerIndex == index -> MaterialTheme.colors.primary
+                                showingExplanation && index == currentQuestion.correctAnswerIndex -> Color.Green.copy(alpha = 0.3f)
+                                showingExplanation && selectedAnswerIndex == index && index != currentQuestion.correctAnswerIndex -> Color.Red.copy(alpha = 0.3f)
+                                else -> Color.Transparent
+                            },
+                            contentColor = if (selectedAnswerIndex == index || (showingExplanation && index == currentQuestion.correctAnswerIndex)) MaterialTheme.colors.onPrimary else LocalContentColor.current
+                        ),
+                        enabled = !showingExplanation // Disable if explanation is shown
                     ) {
                         Text(option)
                     }
@@ -1301,118 +1374,319 @@ fun QuizScreen(viewModel: TherapyViewModel, quiz: TherapyQuiz, onQuizComplete: (
                 Spacer(Modifier.height(24.dp))
                 Button(
                     onClick = {
-                        if (selectedAnswerIndex != null) {
-                            if (selectedAnswerIndex == currentQuestion.correctAnswerIndex) {
-                                score += currentQuestion.marks
-                            }
-                            // Optionally show explanation here or after all questions
-                            // viewModel.saveAnswer(currentQuestion.id, selectedAnswerIndex!!, score)
-
+                        if (showingExplanation) {
+                            // Move to next question or finish
                             if (currentQuestionIndex < quiz.questions.lastIndex) {
                                 currentQuestionIndex++
-                                selectedAnswerIndex = null // Reset selection for next question
+                                selectedAnswerIndex = null
+                                currentQuestionExplanation = null
+                                showingExplanation = false
                             } else {
                                 quizCompleted = true // Last question answered
                             }
+                        } else {
+                            // Process the answer
+                            if (selectedAnswerIndex != null) {
+                                if (selectedAnswerIndex == currentQuestion.correctAnswerIndex) {
+                                    score += currentQuestion.marks
+                                }
+                                currentQuestionExplanation = currentQuestion.explanation
+                                showingExplanation = true
+                            }
                         }
                     },
-                    enabled = selectedAnswerIndex != null
+                    enabled = !showingExplanation || selectedAnswerIndex != null // Enabled if not showing explanation, or if explanation is shown and an answer was selected
                 ) {
-                    Text(if (currentQuestionIndex < quiz.questions.lastIndex) "Next Question" else "Finish Quiz")
+                    Text(if (showingExplanation) (if (currentQuestionIndex < quiz.questions.lastIndex) "Next Question" else "Finish Quiz") else "Submit Answer")
                 }
             } else {
-                Text("No quiz questions available.")
+                Text("No quiz questions available for this content.")
             }
         }
     }
 }
 
-// Placeholder for ViewModel logic (e.g., fetching data, saving results)
+// --- ViewModel Snippet with StateFlow ---
 class TherapyViewModel : ViewModel() {
-    fun markVideoCompleted(videoId: String) { / Logic to update Firestore / }
-    // fun saveAnswer(questionId: String, selectedIndex: Int, currentScore: Int) { / Logic to save progress / }
+
+    private val _uiState = MutableStateFlow<UiState>(UiState.Loading)
+    val uiState: StateFlow<UiState> = _uiState.asStateFlow()
+
+    private val _quizState = MutableStateFlow<QuizState>(QuizState.NotLoaded)
+    val quizState: StateFlow<QuizState> = _quizState.asStateFlow()
+
+    // Example: Fetching video and quiz data
+    fun loadContent(contentId: String) {
+        viewModelScope.launch {
+            _uiState.value = UiState.Loading
+            try {
+                // Fetch video data from Firestore
+                val video = fetchVideoFromFirestore(contentId)
+                _uiState.value = UiState.Success(video)
+            } catch (e: Exception) {
+                _uiState.value = UiState.Error("Failed to load video: ${e.message}")
+            }
+        }
+    }
+
+    // Example: Fetching quiz for a given content
+    fun fetchQuizForContent(contentId: String, onQuizLoaded: (TherapyQuiz) -> Unit) {
+        viewModelScope.launch {
+            _quizState.value = QuizState.Loading
+            try {
+                // Fetch quiz data from Firestore
+                val quiz = fetchQuizFromFirestore(contentId)
+                _quizState.value = QuizState.Loaded(quiz)
+                onQuizLoaded(quiz)
+            } catch (e: Exception) {
+                _quizState.value = QuizState.Error("Failed to load quiz: ${e.message}")
+            }
+        }
+    }
+
+
+    fun markVideoCompleted(videoId: String) {
+        // Logic to update Firestore: update completion status for the video
+        // Example: update `patientProgress` document
+        Log.d("TherapyViewModel", "Marking video $videoId as completed.")
+        // ... Firestore update logic here ...
+    }
+
+    // Placeholder for actual Firestore calls
+    private suspend fun fetchVideoFromFirestore(contentId: String): TherapyVideo {
+        // Simulate network delay
+        delay(1000)
+        return TherapyVideo(id = contentId, title = "Sample Video", videoUrl = "http://example.com/video.mp4", stageId = "stage1", order = 1)
+    }
+
+    private suspend fun fetchQuizFromFirestore(contentId: String): TherapyQuiz {
+        // Simulate network delay
+        delay(500)
+        return TherapyQuiz(
+            id = "quiz_${contentId}",
+            title = "Comprehension Quiz",
+            stageId = "stage1",
+            questions = listOf(
+                QuizQuestion(id = "q1", text = "What is the main topic?", options = listOf("A", "B", "C"), correctAnswerIndex = 0, marks = 1),
+                QuizQuestion(id = "q2", text = "Key takeaway?", options = listOf("X", "Y", "Z"), correctAnswerIndex = 1, explanation = "This is because...", marks = 1)
+            )
+        )
+    }
+
+    sealed class UiState {
+        object Loading : UiState()
+        data class Success(val video: TherapyVideo) : UiState()
+        data class Error(val message: String) : UiState()
+    }
+
+    sealed class QuizState {
+        object NotLoaded : QuizState()
+        object Loading : QuizState()
+        data class Loaded(val quiz: TherapyQuiz) : QuizState()
+        data class Error(val message: String) : QuizState()
+    }
 }
 ```
 
-== A.3 Web Dashboard - Firebase Firestore Interaction Snippet (JavaScript)
+== A.2 Web Dashboard - JavaScript Snippets for Firebase, Chart.js, and UI Handling
+
+This section provides JavaScript examples for interacting with Firebase, visualizing data with Chart.js, and managing UI states.
 
 ```javascript
-// Example JavaScript code for interacting with Firebase Firestore in the web dashboard
-
-import { getFirestore, collection, query, where, getDocs, addDoc, doc, updateDoc, orderBy } from "firebase/firestore";
+// --- Firebase Firestore Interaction and Real-time Listeners ---
+import { getFirestore, collection, query, where, getDocs, addDoc, doc, updateDoc, orderBy, onSnapshot, deleteDoc } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const db = getFirestore();
 const auth = getAuth();
 
-// --- Fetching Patient List for a Therapist ---
+// Function to fetch a therapist's assigned patients
 async function fetchTherapistPatients(therapistUid) {
-    // Assuming therapistUid is available from Firebase Auth
-    const patientsCollection = collection(db, 'users'); // 'users' collection stores all user data
-    const q = query(
-        patientsCollection,
-        where('role', '==', 'child'), // Filter for child role
-        where('linkedTherapistUid', '==', therapistUid), // Filter by assigned therapist
-        orderBy('displayName') // Optional: order by name
-    );
+    const assignmentsRef = collection(db, 'therapistAssignments');
+    const q = query(assignmentsRef, where('therapistUid', '==', therapistUid));
 
     const querySnapshot = await getDocs(q);
+    const patientIds = querySnapshot.docs.map(doc => doc.data().patientUid);
+
+    if (patientIds.length === 0) return [];
+
+    const usersRef = collection(db, 'users');
+    const patientsQuery = query(usersRef, where('uid', 'in', patientIds));
+    const patientsSnapshot = await getDocs(patientsQuery);
+
     const patients = [];
-    querySnapshot.forEach((doc) => {
+    patientsSnapshot.forEach((doc) => {
         patients.push({ id: doc.id, ...doc.data() });
     });
     return patients;
 }
 
-// --- Saving Clinical Assessment Scores ---
-async function saveClinicalAssessment(patientUid, assessmentData) {
-    // assessmentData might include: { capScore: 5, sirScore: 3, notes: "...", assessmentDate: new Date() }
-    const assessmentsCollection = collection(db, 'users', patientUid, 'clinicalAssessments'); // Subcollection under patient user doc
+// Function to set up a real-time listener for a patient's progress
+function listenToPatientProgress(patientUid, callback) {
+    const progressRef = collection(db, 'patientProgress');
+    const q = query(progressRef, where('patientUid', '==', patientUid), orderBy('lastActivityTimestamp', 'desc'));
 
+    const unsubscribe = onSnapshot(q, (querySnapshot) => {
+        const progressData = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        callback(progressData); // Pass the updated data to the callback
+    }, (error) => {
+        console.error("Error listening to patient progress: ", error);
+        // Handle error, e.g., show a notification to the user
+    });
+    return unsubscribe; // Return function to stop listening
+}
+
+// Function to save a clinical assessment score
+async function saveClinicalAssessment(patientUid, assessmentData) {
+    const assessmentsSubCollectionRef = collection(db, 'users', patientUid, 'clinicalAssessments');
     try {
-        const docRef = await addDoc(assessmentsCollection, {
+        const docRef = await addDoc(assessmentsSubCollectionRef, {
             ...assessmentData,
-            therapistUid: auth.currentUser.uid, // Record which therapist made the entry
+            therapistUid: auth.currentUser.uid,
             createdAt: new Date()
         });
         console.log("Clinical assessment saved with ID: ", docRef.id);
         return docRef.id;
     } catch (error) {
         console.error("Error saving clinical assessment: ", error);
-        throw error;
+        throw error; // Rethrow to be caught by UI for user feedback
     }
 }
 
-// --- Fetching Progress Data for Chart.js ---
-async function fetchPatientProgressForChart(patientUid) {
-    const progressCollection = collection(db, 'patientProgress');
-    const q = query(
-        progressCollection,
-        where('patientUid', '==', patientUid),
-        orderBy('lastActivityTimestamp', 'desc'), // Get recent data
-        // Limit might be applied here or in the client for chart display
-    );
+// --- Chart.js Integration Example ---
+// Assumes Chart.js is loaded globally or imported
 
-    const querySnapshot = await getDocs(q);
-    const progressData = [];
-    querySnapshot.forEach((doc) => {
-        progressData.push({ id: doc.id, ...doc.data() });
+function renderCapScoreChart(canvasId, chartData) {
+    // chartData example: { labels: ["2026-01-15", "2026-02-15"], scores: [4, 5] }
+    const ctx = document.getElementById(canvasId).getContext('2d');
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: chartData.labels,
+            datasets: [{
+                label: 'CAP Score Trend',
+                data: chartData.scores,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1,
+                fill: false
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    min: 0,
+                    max: 7 // CAP score range is 0-7
+                }
+            },
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            let label = context.dataset.label || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            if (context.parsed.y !== null) {
+                                label += context.parsed.y;
+                            }
+                            return label;
+                        }
+                    }
+                }
+            }
+        }
     });
-    // Process progressData to format it for Chart.js (e.g., dates, scores)
-    return processDataForChart(progressData);
 }
 
-// Placeholder function to process data for Chart.js
-function processDataForChart(data) {
-    // Example: Extract dates and scores, aggregate if necessary
-    return {
-        labels: data.map(item => new Date(item.lastActivityTimestamp.toDate()).toLocaleDateString()),
-        scores: data.map(item => (item.quizScore / item.quizMaxScore)  100 || 0) // Percentage score
-    };
+// --- UI Handling: Loading States and Error Feedback ---
+
+function showLoadingSpinner(elementId) {
+    const el = document.getElementById(elementId);
+    if (el) {
+        el.innerHTML = '<div class="spinner"></div>'; // Assume a CSS class for spinner
+        el.style.display = 'flex'; // Center the spinner
+        el.style.justifyContent = 'center';
+        el.style.alignItems = 'center';
+    }
 }
+
+function hideLoadingSpinner(elementId) {
+    const el = document.getElementById(elementId);
+    if (el) {
+        el.style.display = 'none';
+    }
+}
+
+function showErrorMessage(message) {
+    // Display message to user, e.g., in a toast notification or alert
+    alert(`Error: ${message}`);
+}
+
+// Example usage in an async function:
+// async function loadPatientData(patientUid) {
+//     showLoadingSpinner('chart-container');
+//     try {
+//         const progress = await fetchPatientProgressForChart(patientUid); // Assume this fetches data
+//         renderCapScoreChart('myChart', progress);
+//     } catch (error) {
+//         showErrorMessage("Failed to load chart data.");
+//     } finally {
+//         hideLoadingSpinner('chart-container');
+//     }
+// }
 ```
 
-These snippets illustrate fundamental aspects of the implementation, demonstrating how core functionalities are built using the chosen technologies.
+== A.3 Typst Code Snippet: Custom Callout Box
+
+This snippet demonstrates how to define a custom visual element in Typst, such as a stylized callout box, for emphasis or highlighting specific information within the report.
+
+```typst
+// Define a custom callout style for the report
+
+#let custom-callout(title: "", body, fill: none, stroke: none, ..args) = {
+  // Default colors and styling if not provided
+  let default-fill = if fill == none { luma(235) } else { fill }
+  let default-stroke = if stroke == none { 0.5pt + gray } else { stroke }
+
+  block(
+    width: 100%,
+    fill: default-fill,
+    stroke: default-stroke,
+    radius: 4pt,
+    inset: (top: 8pt, bottom: 8pt, left: 12pt, right: 12pt),
+    ..args, // Pass through any additional arguments
+    [
+      // Title section if provided
+      if title != "" [
+        #v(1pt)
+        #text(weight: "bold", size: 11pt)[#title]
+        #v(4pt)
+        #rule(width: 1fr, stroke: gray.lighten(30%), stroke-width: 0.5pt) // Simple horizontal rule
+      ],
+      // Body content
+      #body
+    ]
+  )
+}
+
+// Example usage:
+// #custom-callout(
+//   title: [Important Note],
+//   fill: blue.lighten(80%),
+//   stroke: blue.darken(20%),
+//   [This is the content of the important note. It uses a custom callout style for better visibility.]
+// )
+
+// #custom-callout(
+//   title: [Tip],
+//   body: [Remember to always check the latest documentation for syntax changes.],
+// )
+```
+
+These snippets illustrate fundamental aspects of the implementation, demonstrating how core functionalities are built using the chosen technologies and providing examples of custom Typst elements.
 
 // ════════════════════════════════════════════════════════════════
 //  APPENDIX B: ABBREVIATIONS
@@ -1425,56 +1699,36 @@ These snippets illustrate fundamental aspects of the implementation, demonstrati
 
 #v(0.2in)
 
-#figure(table(
-  columns: (6em, 1fr),
+#figure(table(  columns: (6em, 1fr),
   stroke: 0.5pt,
   fill: (x, y) => if y == 0 { luma(220) } else { white },
   inset: 7pt,
   align: left,
-  text(size: 10.5pt)[
-    [Abbreviation], [Full Form],
-    [AI], [Artificial Intelligence],
-    [API], [Application Programming Interface],
-    [BaaS], [Backend-as-a-Service],
-    [CAP], [Categories of Auditory Performance],
-    [CDN], [Content Delivery Network],
-    [CE], [Clinical Engineering], // Added as relevant to healthcare tech
-    [CSS], [Cascading Style Sheets],
-    [DFD], [Data Flow Diagram],
-    [EHR], [Electronic Health Record],
-    [EMR], [Electronic Medical Record],
-    [E2E], [End-to-End],
-    [ER], [Entity-Relationship],
-    [ES6+], [ECMAScript 6 and later],
-    [ExoPlayer], [Open-source media player library for Android],
-    [Firebase], [Google's Backend-as-a-Service Platform],
-    [Git], [Distributed Version Control System],
-    [GitHub], [Web-based hosting service for Git repositories],
-    [Google Play Store], [Online storefront for Android applications],
-    [GPDR], [General Data Protection Regulation],
-    [HIPAA], [Health Insurance Portability and Accountability Act],
-    [HTML], [HyperText Markup Language],
-    [HTTP], [HyperText Transfer Protocol],
-    [HTTPS], [HTTP Secure],
-    [IDE], [Integrated Development Environment],
-    [JS], [JavaScript],
-    [JSON], [JavaScript Object Notation],
-    [JWT], [JSON Web Token],
-    [Kotlin], [Statically typed programming language for JVM],
-    [LMS], [Learning Management System],
-    [mHealth], [Mobile Health],
-    [ML], [Machine Learning],
-    [NoSQL], [Not Only SQL],
-    [RBAC], [Role-Based Access Control],
-    [SDLC], [Software Development Lifecycle],
-    [SIR], [Speech Intelligibility Rating],
-    [SLA], [Service Level Agreement],
-    [UI], [User Interface],
-    [UX], [User Experience],
-    [UAT], [User Acceptance Testing],
-    [VCS], [Version Control System],
-    [VS Code], [Visual Studio Code],
-    [WCAG], [Web Content Accessibility Guidelines],
-  ]
-), caption: [Common Abbreviations and Acronyms],
+  [*Abbreviation*], [*Full Form*],
+  [API], [Application Programming Interface],
+  [APK], [Android Package Kit],
+  [Auth], [Authentication],
+  [BaaS], [Backend as a Service],
+  [BAA], [Business Associate Agreement],
+  [BOM], [Bill of Materials],
+  [CAP], [Categories of Auditory Performance],
+  [CDN], [Content Delivery Network],
+  [CI], [Cochlear Implant],
+  [CRUD], [Create, Read, Update, Delete],
+  [CSS], [Cascading Style Sheets],
+  [DFD], [Data Flow Diagram],
+  [ER], [Entity-Relationship],
+  [FCM], [Firebase Cloud Messaging],
+  [FHIR], [Fast Healthcare Interoperability Resources],
+  [HIPAA], [Health Insurance Portability and Accountability Act],
+  [HOD], [Head of Department],
+  [HTML], [HyperText Markup Language],
+  [HTTP], [HyperText Transfer Protocol],
+  [HTTPS], [HTTP Secure],
+  [IDE], [Integrated Development Environment],
+  [JS], [JavaScript],
+  [JSON], [JavaScript Object Notation],
+  [VPS], [Virtual Private Server],
+),  caption: [Abbreviations and Acronyms],
+
 )

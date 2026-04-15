@@ -503,11 +503,8 @@ The Entity-Relationship diagram models the logical data entities in Sound for Si
 #figure(align(center)[
   #rect(width: 100%, height: auto, stroke: 0.8pt)[
      #align(center + horizon)[
-      #text(size: 11pt, style: "italic", fill: luma(130))[
-        *[ER Diagram ]*\
         #image("er_diagram.png", width: 100%)
       ]
-    ]
   ]
 ],caption: [ER Diagram ]
 )
