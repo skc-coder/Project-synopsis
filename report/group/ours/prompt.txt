@@ -1,0 +1,18 @@
+first read the "cse report format".
+this format has already been implemented in sanjeev.typ, use that dont change anythingt in it wrt to formating.
+enusre the format is followed to the point and strictly.
+
+you have to create the group report for me.
+
+there are four memembers in group 
+use vriables for names (name1, name2 4 such variables)
+
+
+i have included the a my project overiew file.
+
+your goal is to create the report in typst using the fomrating and general structre outlined in sanjeev.typ.
+
+to learn about our project you can read overview.pdf and synopsis .typ (but its formating is not exactly the same as that of report)
+
+also dont use er diagrams, use dashbord schrreenshots as given
+
