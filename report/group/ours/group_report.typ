@@ -9,7 +9,7 @@
 
 #let roll1 = "22EAOCS005"
 #let roll2 = "22EAOCS047"
-#let roll3 = "22EAOCS043"
+#let roll3 = "22EAOCS042"
 #let roll4 = "22EAOCS004"
 
 #let report_author_name = name2
@@ -17,9 +17,13 @@
 #let report_author_roll = "22EAOCS047"
 
 #let department = "Computer Science & Engin1eering"
-#let hod  = "Er. Pawan Sen"
+#let hod  = "Er. NEELAM JANGID
+AP in CSE Deptt"
+#let hema = "Er. Hemlata Garg"
 #let principal = "Dr. Himanshu Arora"
-#let project_guide = "Er. Pawan Sen"
+#let project_guide = " Er. NEELAM JANGID 
+AP in CSE Deptt
+"
 
 #set page(
   paper: "a4",
@@ -91,9 +95,7 @@
     #align(left)[
       #text(size: 12pt)[
         *Under the Supervision of:*\
-        #project_guide\
-        HOD, CSE
-      ]
+        #project_guide\      ]
     ]
 
     #colbreak()
@@ -227,19 +229,29 @@
 #v(0.3in)
 
 #par(justify: true)[
- It gives us immense pleasure to express my heartfelt gratitude to all those who have supported and guided me throughout the successful completion of this final year project.
+  It gives us immense pleasure to express my heartfelt gratitude to all those
+who have supported and guided me throughout the successful completion of
+this final year project.
 \
-  I would first like to extend my sincere thanks to *Dr. Arvind Agarwal*, President, and *Dr. Puja Agarwal*, Group Director of #college, Jaipur, for providing an excellent academic environment and all the necessary facilities that foster learning and innovation.
+We would first like to extend my sincere thanks to Dr. *Arvind Agarwal*,
+President, and *Dr. Puja Agarwal*, Group Director of Arya Institute of
+Engineering Technology and Management, Jaipur, for providing an excellent
+academic environment and all the necessary facilities that foster learning and
+innovation.
 \
-  I am deeply grateful to our respected Principal, *Dr. Himanshu Arora*, for his continuous encouragement and administrative support. I would also like to express my special thanks to *Er. Pawan Sen*, Head of the Department, *Computer Science and Engineering*, for his visionary leadership, valuable suggestions, and motivation throughout the course of this project.
+We would like to express my special thanks to *Er. Neelam Jangid*, Assistant
+Professor, *Computer Science and Engineering*, for his visionary leadership,
+valuable suggestions, and motivation throughout the course of this project.
 \
-  I am also thankful to my Project In-charge, *#hod*, whose timely feedback, guidance, and coordination played a vital role in ensuring the quality and completion of this project work.
+We am also thankful to my Project In-charge, * Er. Hemlata Garg*, whose timely
+feedback, guidance, and coordination played a vital role in ensuring the
+quality and completion of this project work.
 \
-  I extend my gratitude to my project teammates for their collaborative efforts and coordination throughout the development cycle. The division of roles — Android Development, Web Dashboard Development, Backend & Firebase Engineering, and UI/UX Design & Testing — allowed each member to contribute meaningfully and ensured smooth parallel progress across the system.
-\
-  Last but not least, I sincerely thank all the faculty members, lab assistants, and my peers who contributed directly or indirectly with their support and inspiration during the entire project duration.
-\
-  This project has been a significant learning experience and a stepping stone in my professional development.
+Last but not least, we sincerely thank all the faculty members, lab assistants, and
+my peers who contributed directly or indirectly with their support and
+inspiration during the entire project duration.
+This project has been a significant learning experience and a stepping stone in
+my professional development. 
 ]
 
 #v(0.3in)

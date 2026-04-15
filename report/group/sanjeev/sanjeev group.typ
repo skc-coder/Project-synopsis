@@ -12,7 +12,9 @@
 #let name2 = "Sanjeev Kumar (22EAOCS047)"
 #let name3 = "Avinash Bairwa (22EAOCS013)"
 
-#let hod  = "Er. Pawan Sen"
+#let hod  = "Er. NEELAM JANGID
+AP in CSE Deptt"
+#let hema = "Er. Hemlata Garg"
 #let roll = "22EAOCS031"
 #let roll2 = "22EAOCS044"
 #let project = "AI Adaptive Learning Platform"
@@ -104,7 +106,6 @@
       #text(size: 12pt)[
         *Under the Supervision of:*\
         #hod\
-        HOD, CSE
       ]
     ]
 
@@ -217,19 +218,29 @@ for the award of any other degree or diploma at any other institution.
 #v(0.3in)
 
 #par(justify: true)[
-  It gives me immense pleasure to convey my sincere gratitude to everyone who has extended their support and guidance throughout the successful execution of this final year project.
+  It gives us immense pleasure to express my heartfelt gratitude to all those
+who have supported and guided me throughout the successful completion of
+this final year project.
 \
-  I would like to begin by expressing my warmest thanks to *Dr. Arvind Agarwal*, President, and *Dr. Puja Agarwal*, Group Director of #college, Jaipur, for establishing an inspiring academic environment and providing all the resources necessary to nurture learning and creativity.
+We would first like to extend my sincere thanks to Dr. *Arvind Agarwal*,
+President, and *Dr. Puja Agarwal*, Group Director of Arya Institute of
+Engineering Technology and Management, Jaipur, for providing an excellent
+academic environment and all the necessary facilities that foster learning and
+innovation.
 \
-  I am deeply thankful to our respected Principal, *Dr. Himanshu Arora*, for his consistent encouragement and institutional support throughout the project. I extend special appreciation to *#hod*, Head of the Department, *Computer Science and Engineering*, for his forward-thinking leadership, constructive suggestions, and motivation that kept the team focused during every phase of this work.
+We would like to express my special thanks to *Er. Neelam Jangid*, Assistant
+Professor, *Computer Science and Engineering*, for his visionary leadership,
+valuable suggestions, and motivation throughout the course of this project.
 \
-  I also wish to acknowledge the invaluable guidance of my Project In-charge, *#hod*, whose timely reviews, directional feedback, and coordination were instrumental in maintaining the quality and momentum of this project.
+We am also thankful to my Project In-charge, * Er. Hemlata Garg*, whose timely
+feedback, guidance, and coordination played a vital role in ensuring the
+quality and completion of this project work.
 \
-  I am genuinely grateful to my project teammates for their enthusiastic collaboration and sustained efforts throughout the development lifecycle. The clearly defined division of responsibilities — Frontend Development, Backend & AI Integration Engineering, and Database & System Design — enabled each member to contribute purposefully and ensured steady, parallel progress across all subsystems.
-\
-  Finally, I wish to thank every faculty member, laboratory assistant, and fellow student who contributed, directly or otherwise, with encouragement and inspiration over the course of this project.
-\
-  This project has been a transformative experience that has deepened my technical understanding and strengthened my readiness for a professional career.
+Last but not least, we sincerely thank all the faculty members, lab assistants, and
+my peers who contributed directly or indirectly with their support and
+inspiration during the entire project duration.
+This project has been a significant learning experience and a stepping stone in
+my professional development. 
 ]
 
 #v(0.3in)
