@@ -102,7 +102,6 @@ AP in CSE Deptt"
       #text(size: 12pt)[
         *Under the Supervision of:*\
         #hod\
-        HOD, CSE
       ]
     ]
 
