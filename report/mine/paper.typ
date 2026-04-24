@@ -17,10 +17,9 @@
 #let roll2 = "22EAOCS047"
 #let roll3 = "22EAOCS042"
 #let roll4 = "22EAOCS004"
-#let ap  = "Er. Neelam Jangid"
-#let inch = "Er. Hemalata Garg"
-#let incha ="Er. Neelam Jangid
+#let hod  = "Er. Neelam Jangir
 AP in CSE Deptt"
+#let inch = "Er. Pawan Sen"
 #let roll = "22EAOCS047"
 #let project = "Sound for Silence"
 
@@ -40,63 +39,56 @@ AP in CSE Deptt"
   spacing: 24pt,
 )
 
-// ── Heading styles ───────────────────────────────────────────────
+
+
+#set heading(numbering: "1.1.1")
+
+#let ind-heading(level) = if level == 1 { -0.1em } else if level == 2 { 1.2em } else { 3em }
+#let ind-par(level) = if level == 1 { 0em } else if level == 2 { 3.3em } else { 5.3em }
+
+#show heading: it => {
+  let i = ind-heading(it.level)
+  if it.level == 1 {
+    pagebreak(weak: true)
+    v(12pt)
+    pad(left: i)[#text(size: 16pt, weight: "bold")[#it]]
+    v(12pt)
+  } else if it.level == 2 {
+    v(8pt)
+    pad(left: i)[#text(size: 14pt, weight: "bold")[#it]]
+    v(8pt)
+  } else {
+    v(6pt)
+    pad(left: i)[#text(size: 12pt, weight: "bold")[#it]]
+    v(6pt)
+  }
+}
+
+#show par: it => context {
+  let depth = counter(heading).get().len()
+  pad(left: ind-par(depth), it)
+}
+
+#show list: it => context {
+  pad(left: ind-par(counter(heading).get().len()), it)
+}
+
+#show enum: it => context {
+  pad(left: ind-par(counter(heading).get().len()), it)
+}
+
+#show figure: it => context {
+  pad(left: ind-par(counter(heading).get().len()), it)
+}
+
+// #show raw.where(block: true): it => context {
+//   pad(left: ind-par(counter(heading).get().len()), it)
+// }
 // 
-// #set heading(numbering: (..nums) => {
-//   if nums.pos().len() <= 2 {
-//     numbering("1.1.", ..nums)
-//   }
-//   if nums.pos().len() <= 3{
-//     numbering("1.1.1", ..nums)
-//   }
-// })
-
-#set heading(numbering: "1.")
-#show heading.where(level: 1): it => {
-  pagebreak()
-  it
-}   // Set spacing for all heading levels
-#show heading.where(level: 1): it => {
-  set text(size: 16pt, weight: "bold")
-  set block(below: 25pt)
-  it
+// 
+#show raw.where(block: true): it => context {
+  pad(left: ind-par(counter(heading).get().len()) + 0.5em, it)
 }
-#show heading.where(level: 2): it => {
-  set text(size: 14pt)
-  set block(below: 15pt)
-  it
-}
-#show heading.where(level: 3): it => {
-  set text(size: 12pt)
-  set block(below: 10pt)
-  it
-}   
-#let indent-3 = 1em
-
-
-// #show heading.where(level: 3): set text(size: 12pt) + set block(below: 10pt)   
-// #show heading.where(level: 1): it => {
-//   pagebreak(weak: false)
-//   v(6pt)
-//   align(center)[
-//     #text(size: 16pt, weight: "bold")[#it.body]
-//   ]
-//   v(8pt)
-// }
-
-// #show heading.where(level: 2): it => {
-//   v(6pt)
-//   text(size: 14pt, weight: "bold")[#it.body]
-//   v(4pt)
-// }
-
-// #show heading.where(level: 3): it => {
-//   v(4pt)
-//   text(size: 12pt, weight: "bold")[#it.body]
-//   v(2pt)
-// }
-
-
 // ════════════════════════════════════════════════════════════════
 //  FRONT PAGE
 // ════════════════════════════════════════════════════════════════
@@ -142,7 +134,7 @@ AP in CSE Deptt"
     #align(left)[
       #text(size: 12pt)[
         *Under the Supervision of:*\
-        #incha\
+        #hod\
       ]
     ]
 
@@ -202,7 +194,7 @@ AP in CSE Deptt"
 
 #v(0.6in)
 
-#columns(2, gutter: 40pt)[
+#columns(2, gutter: 37pt)[
   #align(left)[
     #text(size: 12pt)[
       *Project In-charge*\
@@ -221,14 +213,6 @@ AP in CSE Deptt"
   ]
 ]
 
-// ════════════════════════════════════════════════════════════════
-//  DECLARATION
-// ════════════════════════════════════════════════════════════════
-// #pagebreak()
-
-// #align(center)[
-//   #text(size: 16pt, weight: "bold")[DECLARATION BY THE CANDIDATE]
-// ]
 
 
 #align(center)[
@@ -254,7 +238,7 @@ for the award of any other degree or diploma at any institution.
 #v(0.8in)
 
 
-#columns(2, gutter: 40pt)[
+#columns(2, gutter: 37pt)[
   #align(left)[
  
   ]
@@ -273,17 +257,8 @@ for the award of any other degree or diploma at any institution.
 ]
 
 
-// ════════════════════════════════════════════════════════════════
-//  ACKNOWLEDGEMENT
-// ════════════════════════════════════════════════════════════════
-// #pagebreak()
 
-// #align(center)[
-//   #text(size: 16pt, weight: "bold")[ACKNOWLEDGEMENT]
-// ]
-// 
 #align(center)[
-//   #text(size: 16pt, weight: "bold")[DECLARATION BY THE CANDIDATE]
 #[
   #show heading: set text(size: 16pt, weight: "bold")   
   #set heading(numbering: none)
@@ -307,7 +282,7 @@ Engineering Technology and Management, Jaipur, for providing an excellent
 academic environment and all the necessary facilities that foster learning and
 innovation.
 \
-We would like to express my special thanks to *#ap*, Assistant
+We would like to express my special thanks to *Er. Neelam Jangid*, Assistant
 Professor, *Computer Science and Engineering*, for his visionary leadership,
 valuable suggestions, and motivation throughout the course of this project.
 \
@@ -324,19 +299,7 @@ my professional development.
 
 #v(0.6in)
 
-// #align(right)[
-//   #text(size: 12pt)[
-//     // *#name1*\
-//     *#name1 (#roll1)*\
-//     *#name2 (#roll2)*\
-//     *#name3 (#roll3)*\
-//     *#name4 (#roll4)*\
-
-//     // Roll No: #roll\
-//     B.Tech 8th Semester, CSE
-//   ]
-// ]
-#columns(2, gutter: 40pt)[
+#columns(2, gutter: 37pt)[
   #align(left)[
  
   ]
@@ -354,42 +317,6 @@ my professional development.
   ]
 ]
 
-// ════════════════════════════════════════════════════════════════
-//  LIST OF TABLES
-// ════════════════════════════════════════════════════════════════
-// #pagebreak()
-
-// #align(center)[
-//   #text(size: 14pt, weight: "bold")[LIST OF TABLES]
-// ]
-
-
-
-
-// ════════════════════════════════════════════════════════════════
-//  TABLE OF CONTENTS
-// ════════════════════════════════════════════════════════════════
-
-
-// // Remove dots for level 1 entries
-// #show outline.entry.where(): set outline.entry(fill: [])
-// // Make level 1 entries bold
-// #show outline.entry.where(level: 1): set text(weight: "bold")
-
-// // #pagebreak()
-// #align(center)[
-// //   #text(size: 16pt, weight: "bold")[DECLARATION BY THE CANDIDATE]
-// #[
-//   #show heading: set text(size: 16pt, weight: "bold")   
-//   #set heading(numbering: none)
-//   = TABLE OF CONTENTS
-// ]]
-// #v(0.3in)
-// *PLEMARIES*
-// #v(10pt)
-// #outline(title: none, indent: 2em, depth: 2)
-// #v(10pt)
-// // #outline(title: none, indent: 2em, depth: 2)   
 
 
 #show outline.entry.where(): set outline.entry(fill: [])
@@ -408,7 +335,7 @@ my professional development.
 #v(6pt)
 #grid(
   columns: (1fr, auto),
-  gutter: 4pt,
+  gutter: 10pt,
   ..([• *Certificate of Completion*], align(right)[i]),
   ..([• *Declaration by the Candidate*], align(right)[ii]),
   ..([• *Acknowledgement*], align(right)[iii]),
@@ -454,15 +381,6 @@ my professional development.
     }).flatten()
   )
 }
-
-// ════════════════════════════════════════════════════════════════
-//  LIST OF FIGURES
-// ════════════════════════════════════════════════════════════════
-// #pagebreak()
-
-// #align(center)[
-//   #text(size: 14pt, weight: "bold")[LIST OF IMAGES]
-// ]
 
 
 #align(center)[
@@ -520,8 +438,6 @@ my professional development.
 // ════════════════════════════════════════════════════════════════
 
 
-
-
 = Introduction
 
 *Sound for Silence* is a digital healthcare platform built around a dual-interface architecture, developed to support children going through cochlear implant rehabilitation. The platform delivers its functionality through two primary interfaces — an Android mobile application serving patients and their parents, and a web-based dashboard designed for therapists and clinicians — both powered by a shared Firebase cloud backend.
@@ -531,7 +447,6 @@ This report presents an individual account of the contributions made in the capa
 The platform was built collaboratively by a team of four, with each member taking ownership of a clearly defined technical domain. The team comprised a *Backend & Firebase Engineer*, an *Android Developer*, a *Frontend & Web Dashboard Developer*, and a *UI/UX & Testing Engineer*. While responsibilities were divided by specialisation, the team worked in close coordination throughout development to ensure consistent integration across all layers of the system.
 
 == Abstract of Project
-
 
 *Sound for Silence* is a dual-interface digital healthcare platform designed for children undergoing cochlear implant rehabilitation. The system comprises an Android mobile application for patients and parents, and a web-based dashboard for therapists and clinicians, unified by a Firebase cloud backend.
 
@@ -556,6 +471,10 @@ table(
   caption: [Team Member Roles and Responsibilities],
 
 )
+
+Designed and implemented the full Firebase backend infrastructure, including role-based authentication, Cloud Firestore data modeling, security rules, and web dashboard hosting. This layer acts as the single source of truth, synchronizing data between the Android app and the therapist web portal.
+
+
 
 === Objective
 
@@ -588,7 +507,7 @@ Sound for Silence addresses all these requirements using Firebase as a serverles
 //  2. FEASIBILITY STUDY
 // ════════════════════════════════════════════════════════════════
 = Feasibility Study
-
+The backend for Sound for Silence is powered entirely by Firebase, Google’s comprehensive Backend-as-a-Service (BaaS) platform. By leveraging Firebase, the project bypasses the need for a traditional, dedicated application server. This architectural choice effectively eliminates operational overhead while ensuring the app runs on a robust, production-grade cloud infrastructure.
 == Technical Feasibility
 
 The backend infrastructure of Sound for Silence is built entirely on Firebase, a managed Backend-as-a-Service (BaaS) platform provided by Google. Firebase eliminates the requirement for a dedicated application server, reducing operational complexity to zero while providing production-grade cloud infrastructure.
@@ -633,7 +552,9 @@ No dedicated server, VPS, or paid database subscription is required. The total m
 //  3. SOFTWARE REQUIREMENT SPECIFICATIONS
 // ════════════════════════════════════════════════════════════════
 = Software Requirement Specifications
+The backend serves as the authoritative integration layer that bridges the Android application and the web dashboard. It functions as the central nervous system of the ecosystem, orchestrating seamless data management and ensuring that the state remains synchronized across all client interfaces. By centralizing these operations, the system maintains a unified "source of truth" for every user interaction.
 
+Beyond simple connectivity, this layer enforces rigorous identity management and granular access control to safeguard user information. It is responsible for upholding data integrity through server-side validation and coordinating complex workflows, ensuring that the transition of information between the mobile and web platforms is both secure and consistent.
 == Introduction
 *Backend Software Requirements Overview:*  
 The backend is the authoritative integration layer connecting the Android app and web dashboard, responsible for data management, identity, access control, integrity, and coordinated state across clients.
@@ -656,8 +577,13 @@ Automated test suites validate Firestore security rules and CRUD scenarios; CI/C
 
 
 == Selection of Technology / Specific Requirements
+The system is designed to provide secure, identity-based access by integrating **Firebase Authentication** for user verification. By utilizing email and password credentials, the platform ensures a standardized and reliable entry point for all users, leveraging Google's managed security infrastructure to handle sensitive login data.
+
 
 === Functional Requirements
+
+To maintain a clear separation of concerns and distinct user experiences, the system utilizes **Firebase Custom Claims** to assign specific roles—such as **parent** or **therapist**—to each account. This server-side attribution allows the backend to enforce granular access control and tailor the application's functionality based on the user's verified identity, ensuring that sensitive data and administrative tools are only accessible to the authorized role.
+
 
 *Authentication:*
 - The system shall authenticate users via email and password using Firebase Authentication.
@@ -711,9 +637,9 @@ Automated test suites validate Firestore security rules and CRUD scenarios; CI/C
 // ════════════════════════════════════════════════════════════════
 = Design
 
-== ER Diagram
+The Entity-Relationship diagram represents the core data entities within Sound for Silence and how they connect to each other. It serves as a logical blueprint before these entities are translated into Firestore's document-collection architecture.
 
-The Entity-Relationship diagram models the logical data entities in Sound for Silence and their relationships, prior to mapping them to Firestore's document-collection structure.
+== ER Diagram
 
 *Entities and Attributes:*
 
@@ -1615,10 +1541,9 @@ There is no automated testing framework for the backend services. This makes it 
 //  8. CONCLUSION & FUTURE SCOPE
 // ════════════════════════════════════════════════════════════════
 = Conclusion & Future Scope
+Sound for Silence's backend was built on Firebase, a serverless platform chosen for real-time synchronization, automatic scaling, and built-in security without managing dedicated infrastructure. The implementation delivered: email/password authentication with role-based custom claims for patients, therapists, and admins; a structured Firestore schema modeling user profiles, therapy sessions, exercise logs, progress metrics, and therapist assignments; fine-grained Security Rules enforcing role-based access control at the database layer; real-time data sync between the Android app and therapist web dashboard; and automated deployment of the therapist portal via Firebase Hosting with global CDN and HTTPS.
 
 == Conclusion
-
-The backend infrastructure of Sound for Silence was successfully designed and implemented using Firebase’s serverless cloud platform, chosen for its ability to handle real-time data synchronization, eliminate the need for managing dedicated servers, and provide built-in scalability and security. This implementation met all specified backend objectives: secure email/password authentication with role-based custom claims that distinguish between patients, therapists, and administrators; a well-structured Firestore data model that maps all application entities including user profiles, therapy sessions, exercise logs, progress metrics, and therapist assignments; comprehensive Security Rules that enforce fine-grained, role-based access control at the database layer; real-time data synchronization between the Android mobile app and the web-based therapist dashboard; and automated deployment of the therapist portal via Firebase Hosting with global CDN support and HTTPS enforcement.
 
 A key technical contribution of this role was the design and validation of the Firestore Security Rules. Instead of embedding authorization logic within application code—which risks inconsistency or bypass—the entire access control policy was implemented declaratively at the database level. This ensures that even if a client application is compromised or modified, unauthorized data access remains impossible. The rules were rigorously tested against 19 distinct test cases covering authentication token validation, role extraction from custom claims, CRUD permissions for each user type, and adversarial scenarios such as attempts to read or modify data belonging to other users or roles. All test cases passed, confirming that data isolation between user roles is enforced correctly and consistently without any reliance on server-side application logic.
 
